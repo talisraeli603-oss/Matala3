@@ -1,0 +1,46 @@
+<%- include("partials/head", { pageTitle, active: "schemas" }) %>
+
+<section class="hero">
+  <p class="eyebrow">Server-rendered page</p>
+  <h1>Resource schemas</h1>
+  <p>
+    These field definitions are passed from Express into the EJS template when the page is built
+    (SSR). They describe the two REST resources used by the game.
+  </p>
+</section>
+
+<p class="schema-meta"><%= schemas.length %> resources · game has <%= stagesCount %> stages</p>
+
+<div class="schema-grid">
+  <% schemas.forEach(function (schema) { %>
+    <article class="panel schema-card">
+      <h2><code><%= schema.name %></code></h2>
+      <p><%= schema.description %></p>
+      <ul class="path-list">
+        <li><span>Collection</span> <code><%= schema.collectionPath %></code></li>
+        <li><span>Item</span> <code><%= schema.itemPath %></code></li>
+        <li><span>Nested</span> <code><%= schema.nestedPath %></code></li>
+      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% schema.fields.forEach(function (field) { %>
+            <tr>
+              <td><code><%= field.name %></code></td>
+              <td><%= field.type %></td>
+              <td><%= field.notes %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </article>
+  <% }) %>
+</div>
+
+<%- include("partials/foot") %>
