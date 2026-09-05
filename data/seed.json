@@ -1,0 +1,79 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Silent Orbit",
+      "author": "Maya Chen",
+      "genre": "sci-fi",
+      "year": 2021,
+      "available": true,
+      "copies": 3
+    },
+    {
+      "id": 2,
+      "title": "Bread and Rain",
+      "author": "Omar Haddad",
+      "genre": "fiction",
+      "year": 2019,
+      "available": true,
+      "copies": 2
+    },
+    {
+      "id": 3,
+      "title": "HTTP Illustrated",
+      "author": "Lea Katz",
+      "genre": "tech",
+      "year": 2023,
+      "available": false,
+      "copies": 0
+    },
+    {
+      "id": 4,
+      "title": "Red Dunes",
+      "author": "Maya Chen",
+      "genre": "sci-fi",
+      "year": 2018,
+      "available": true,
+      "copies": 1
+    },
+    {
+      "id": 5,
+      "title": "Harbor Maps",
+      "author": "Noa Berger",
+      "genre": "fiction",
+      "year": 2020,
+      "available": true,
+      "copies": 4
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "bookId": 1,
+      "reviewer": "Dana",
+      "rating": 5,
+      "comment": "Could not put it down."
+    },
+    {
+      "id": 2,
+      "bookId": 1,
+      "reviewer": "Gil",
+      "rating": 4,
+      "comment": "Great worldbuilding."
+    },
+    {
+      "id": 3,
+      "bookId": 3,
+      "reviewer": "Noa",
+      "rating": 5,
+      "comment": "Best networking intro I have read."
+    },
+    {
+      "id": 4,
+      "bookId": 2,
+      "reviewer": "Amit",
+      "rating": 3,
+      "comment": "Quiet and lovely, a bit slow."
+    }
+  ]
+}
