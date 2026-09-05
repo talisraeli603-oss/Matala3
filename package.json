@@ -1,0 +1,18 @@
+{
+  "name": "http-rest-catalog-quest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A short browser game for learning HTTP and REST (Assignment 3)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}
