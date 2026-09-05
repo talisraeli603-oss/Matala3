@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%= pageTitle %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/">
+          <span class="brand-mark" aria-hidden="true">CQ</span>
+          <span>
+            <strong>Catalog Quest</strong>
+            <small>Learn HTTP by talking to a real server</small>
+          </span>
+        </a>
+        <nav class="site-nav">
+          <a href="/" class="<%= typeof active === 'string' && active === 'game' ? 'is-active' : '' %>">Game</a>
+          <a href="/schemas" class="<%= typeof active === 'string' && active === 'schemas' ? 'is-active' : '' %>">Schemas</a>
+        </nav>
+      </header>
+      <main>
